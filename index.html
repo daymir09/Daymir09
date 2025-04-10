@@ -7,13 +7,22 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
+            animation: backgroundAnimation 10s infinite alternate;
         }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: red; }
+            25% { background-color: green; }
+            50% { background-color: lightblue; }
+            75% { background-color: blue; }
+            100% { background-color: yellow; }
+        }
+
         header {
-            background: #007BFF;
+            background: rgba(0, 123, 255, 0.8);
             color: #fff;
             padding: 10px 20px;
             text-align: center;
@@ -63,7 +72,7 @@
         
         <div class="image-section">
             <h2>Imágenes de Ejemplo</h2>
-            <img src="daymir_9.jpg" alt="Imagen de Daymir">
+            <img src="C:/Users/daymir09/Downloads/daymir_9.jpg" alt="Imagen de Daymir">
             <p>Esta es la imagen que has insertado desde la carpeta de Descargas.</p>
         </div>
     </main>
